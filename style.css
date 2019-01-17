@@ -1,0 +1,84 @@
+/*Importieren der Roboto Schriftart für ein besseres Design*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    font-family:Roboto,sans-serif;
+    color:black;
+}
+.runterSchalten, .hochSchalten, .stop, .start{
+    font-family:Roboto,sans-serif;
+}
+.neuesAuto{
+    padding-top: 0;
+    background-color:transparent;
+    color:white;
+    padding-bottom: 10px;
+    font-family:Roboto,sans-serif;
+    font-size:16px;
+}
+/*
+Diese CSS-Klasse beschreibt das Design für die Experience in welcher man das Auto erstellen kann
+ */
+.autoErstellen{
+  width:100%;
+   /* background-color: #4CAF50;
+   height:100%;
+   */
+
+}
+.autoErstellenInput{
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+input, select {
+    font-family: Roboto, sans-serif;
+    border-radius:10px;
+    height:30px;
+    background:transparent;
+    text-align: center;
+    margin-top:5px;
+    margin-left:3px;
+}
+
+.inputBtn, .start, .hochSchalten, .stop, .runterSchalten{
+    background-color:green;
+    border:1px solid green;
+    border-radius:30px;
+    height:40px;
+    color:white;
+}
+.stop, .runterSchalten{
+    background-color:orangered;
+    border:1px solid orangered;
+}
+.inputBtn:hover{
+    transition: 0.5s;
+    background-color: darkorange;
+}
+
+.colorSelect{
+
+    width:200px;
+    color:black;
+    height: 35px;
+}
+.autoInput{
+    width:200px;
+}
+
+::placeholder{
+    color:black;
+}
+
+.containerAuto {
+    width:70px;
+    height:70px;
+    background-color: transparent;
+    position:relative;
+}
+
+hr{
+    width:100%;
+    color: chartreuse;
+}

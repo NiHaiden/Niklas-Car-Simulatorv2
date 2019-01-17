@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Simulator by Niklas Haiden</title>
+    <link rel="icon" href="pictures/rennauto_blau.png"> <!--Icon in der Adresszeile-->
+    <link rel="stylesheet" href="style.css"> <!--Einbindung der Style-Datei-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="autoErstellen">
+    <div class="autoErstellenInput">
+        <p>Erstelle dein neues Auto:</p>
+    <input class="autoInput" id="autoMarke" type="text" placeholder="Hier Marke eingeben" />
+
+    <input class ="autoInput"id="autoName" type="text" placeholder="Hier Modell / Name eingeben" />
+
+
+    <select class="autoInput colorSelect" id="autoFarbe" placeholder="Farbe auswählen">
+        <option value="Blau">Blau</option>
+        <option value="Rot">Rot</option>
+    </select>
+    <input class="autoInput" id="autoLeistung" type="number" placeholder="Hier PS eingeben" />
+
+    <input class="autoInput" id="autoGaenge"  type="number" placeholder="Hier Gaenge eingeben" />
+
+    <input class="autoInput inputBtn" type="button" onclick="addCar(autoMarke.value, autoName.value, autoFarbe.value, autoLeistung.value, autoGaenge.value);" value="Auto erstellen"/
+    </div>
+</div>
+<hr>
+<p>Auto-Dashboard:</p>
+<div id="anzeige"></div>
+<hr>
+<p>Rennen:</p>
+<div id="raceAnzeige"></div>
+</body>
+</html>
